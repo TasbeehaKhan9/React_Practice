@@ -1,0 +1,20 @@
+
+function Hello(){
+  const name = "tasbeeha"
+  const myStyle = {
+    color: "white",
+    textAlign: "center",
+    backgroundColor: "Blue",
+    fontSize: "80"
+  }
+ 
+  return(
+
+    <>
+    <h1 style={myStyle}> My name is {name}</h1>
+    </>
+  
+  )
+}
+
+export default Hello
