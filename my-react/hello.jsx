@@ -1,20 +1,38 @@
 
-function Hello(){
-  const name = "tasbeeha"
-  const myStyle = {
-    color: "white",
-    textAlign: "center",
-    backgroundColor: "Blue",
-    fontSize: "80"
-  }
+// function Hello(){
+//   const name = "tasbeeha"
+//   const myStyle = {
+//     color: "white",
+//     textAlign: "center",
+//     backgroundColor: "Blue",
+//     fontSize: "80"
+//   }
  
-  return(
+//   return(
 
-    <>
-    <h1 style={myStyle}> My name is {name}</h1>
-    </>
+//     <>
+//     <h1 style={myStyle}> My name is {name}</h1>
+//     </>
   
+//   )
+// }
+
+// export default Hello
+
+
+
+
+function Animation(){
+  return(
+<>
+<div className="maindiv">
+  <h1>Hi Tasbeeha Khan</h1>
+</div>
+</>
+
   )
 }
 
-export default Hello
+
+
+export default Animation
