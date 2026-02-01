@@ -32,7 +32,7 @@
 
 import { useEffect, useState } from "react";
 import Animation from "../hello";
-import Home from "./home";
+import "./home"  
 
 
 function App(){
@@ -42,7 +42,7 @@ function App(){
             setShowSplash(false);
         },2000 );
     }, []);
-return<>{showSplash ? <Animation /> : <Home />}</>;
+return<>{showSplash && <Animation /> }</>;
 
 }
 export default App

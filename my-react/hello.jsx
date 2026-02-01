@@ -22,17 +22,33 @@
 
 
 
+// function Animation(){
+//   return(
+// <>
+// <div className="maindiv">
+//   <h1>Hi Tasbeeha Khan</h1>
+// </div>
+// </>
+
+//   )
+// }
+
+
+
+// export default Animation
+
+
 function Animation(){
+
   return(
-<>
-<div className="maindiv">
-  <h1>Hi Tasbeeha Khan</h1>
-</div>
-</>
+    <>
+     <div className="splash">
+      <img src="./leave.png" alt="logo" className="logo" />
+     </div>
 
-  )
+    </>
+  );
 }
-
 
 
 export default Animation
