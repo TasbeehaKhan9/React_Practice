@@ -105,6 +105,7 @@
   height: 200px;
   overflow: hidden;      /* extra image hide */
   cursor: pointer;
+box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
 .card-image {
@@ -117,4 +118,42 @@
   transform: translateY(-50%);
 }
 
+  .cards {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 12px;
+}
 
+
+.card-images{
+
+  height: 100%;
+  transition: transform 6s linear;
+}
+
+.cards:hover .card-images{
+transform: translateX(-50%);
+}
+
+
+.para-div{
+  /* background-color: blueviolet; */
+  width: 17%;
+}
+.card-item{
+  text-align: center; /* ✅ text center + image ke neeche */
+}
+
+.text{
+  margin-top: 18px;   /* ✅ image ke neeche gap */
+  font-style: italic; /* ✅ screenshot jaisa feel */
+}
+.maincontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 60px 40px;     /* row gap / column gap */
+  padding: 40px;
+  align-items: start;
+}
