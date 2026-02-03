@@ -8,6 +8,7 @@ import sixthImage from "./6 card image.jpg";
 import seventhImage from "./7 card image.jpg";
 import eightImage from "./8 card image.jpg";
 import nineImage from "./9 card image.jpg";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -24,71 +25,92 @@ function Home() {
 
 <div className="maincontainer">
 
-  <div className="card-item">
-    <div className="card">
-      <img src={firstImage} alt="demo" className="card-image" />
+  <div className="cardd-item">
+    <div className="cardd">
+      <img src={firstImage} alt="demo" className="cardd-image" />
+    </div>
+    <p className="text">Main Home</p>
+  </div>
+
+  <div className="cardd-item">
+    <div className="cardd">
+      <img src={secondImage} alt="demo" className="cardd-image" />
     </div>
     <p className="text">Floating Portfolio</p>
   </div>
 
-  <div className="card-item">
-    <div className="card">
-      <img src={secondImage} alt="demo" className="card-image" />
+  <div className="cardd-item">
+    <div className="cardd">
+      <img src={thirdImage} alt="demo" className="cardd-image" />
     </div>
-    <p className="text">Floating Portfolio</p>
+    <p className="text">Portfolio Pinterest</p>
   </div>
 
-  <div className="card-item">
-    <div className="card">
-      <img src={thirdImage} alt="demo" className="card-image" />
+  <div className="cardd-item">
+    <div className="cardd">
+      <img src={forthImage} alt="demo" className="cardd-image" />
     </div>
-    <p className="text">Floating Portfolio</p>
+    <p className="text">Animated Slider</p>
   </div>
 
-  <div className="card-item">
-    <div className="card">
-      <img src={forthImage} alt="demo" className="card-image" />
+  <div className="cardd-item">
+    <div className="cardd">
+      <img src={fifthImage} alt="demo" className="cardd-image" />
     </div>
-    <p className="text">Floating Portfolio</p>
+    <p className="text">Portfolio Metro</p>
   </div>
 
-  <div className="card-item">
-    <div className="card">
-      <img src={fifthImage} alt="demo" className="card-image" />
+  <div className="cardd-item">
+    <div className="cardd">
+      <img src={sixthImage} alt="demo" className="cardd-image" />
     </div>
-    <p className="text">Floating Portfolio</p>
+    <p className="text">Portfolio Gallery</p>
   </div>
 
-  <div className="card-item">
-    <div className="card">
-      <img src={sixthImage} alt="demo" className="card-image" />
+  <div className="cardd-item">
+    <div className="cardds">
+      <img src={seventhImage} alt="demo" className="cardd-images" />
     </div>
-    <p className="text">Floating Portfolio</p>
+    <p className="text">Interactive Links</p>
   </div>
 
-  <div className="card-item">
-    <div className="card">
-      <img src={seventhImage} alt="demo" className="card-image" />
+  <div className="cardd-item">
+    <div className="cardd">
+      <img src={eightImage} alt="demo" className="cardd-image" />
     </div>
-    <p className="text">Floating Portfolio</p>
+    <p className="text">Split Slider Showcase</p>
   </div>
 
-  <div className="card-item">
-    <div className="card">
-      <img src={eightImage} alt="demo" className="card-image" />
+  <div className="cardd-item">
+    <div className="cardds">
+      <img src={nineImage} alt="demo" className="cardd-images" />
     </div>
-    <p className="text">Floating Portfolio</p>
+    <p className="text">Portfolio Carousel</p>
   </div>
 
-  <div className="card-item">
-    <div className="cards">
-      <img src={nineImage} alt="demo" className="card-images" />
+    <div className="cardd-item">
+    <div className="cardd">
+      <img src={firstImage} alt="demo" className="cardd-image" />
     </div>
-    <p className="text">Floating Portfolio</p>
+    <p className="text">Main Home</p>
   </div>
+
 
 </div>
+<br />
+<br />
+<br />
+<div className="sec-main-div">
+  <h2>Your brand new folio with aprofessional layout 
+    <br />
+    collection and quite a cheerful <span className="imp-text">personality!</span></h2>
 
+<br />
+<br />
+<button className=" primary">Purchase</button>
+
+
+</div>
     </>
 
 
