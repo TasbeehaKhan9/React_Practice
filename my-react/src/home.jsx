@@ -8,7 +8,15 @@ import sixthImage from "./6 card image.jpg";
 import seventhImage from "./7 card image.jpg";
 import eightImage from "./8 card image.jpg";
 import nineImage from "./9 card image.jpg";
+import gitarImage from "./person gitar image.png";
+import bird from "./last bird image.png";
+import petalLeave from  "./pettal leave.png"
+import petalLight from  "./leave light.png"
+
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -19,9 +27,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Home() {
   return (
     <>
-    <div>
-  <h1>PUBLIC PAGE IS MINE</h1>
-</div>
+
 
 <div className="maincontainer">
 
@@ -108,9 +114,64 @@ function Home() {
 <br />
 <br />
 <button className=" primary">Purchase</button>
-
-
 </div>
+<div>
+</div>
+
+ <section className="hero">
+      <div className="hero__inner">
+        {/* background blobs */}
+        <div className="hero__bg">
+          <div className="blob blob--1" />
+          <div className="blob blob--2" />
+        </div>
+
+        {/* leaves */}
+        <img
+          className="leaf leaf--left fade-in-left"
+          src={petalLeave}
+          alt="leaf-left"
+        />
+        <img
+          className="leaf leaf--left2 float-rotate"
+          src={petalLight}
+          alt="leaf-left-2"
+        />
+
+        {/* petal */}
+        <img className="petal float-petal" src={petalLeave} alt="petal" />
+
+        {/* bird */}
+        <img className="bird float-bird" src={bird} alt="bird" />
+
+        {/* right leaf */}
+        <img
+          className="leaf leaf--right fade-in-right"
+          src={petalLight}
+          alt="leaf-right"
+        />
+
+        {/* heart */}
+        <div className="heart pulse" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+        </div>
+
+        {/* main */}
+        <div className="hero__grid">
+          <div className="hero__left">{/* optional text */}</div>
+
+          <div className="hero__right">
+            <img
+              className="person float-person"
+              src={gitarImage}
+              alt="person with guitar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
     </>
 
 

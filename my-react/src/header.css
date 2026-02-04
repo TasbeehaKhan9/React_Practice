@@ -1,0 +1,130 @@
+.mareeHero{
+  position: relative;
+  min-height: 520px;
+  background: #ffffff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 16px;
+}
+
+/* center content */
+.center{
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  max-width: 820px;
+}
+.logo{
+  width: 360px;
+  max-width: 80vw;
+  height: auto;
+  display: inline-block;
+    animation: zoomFade 2s ease-in ;
+}
+
+
+@keyframes zoomFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+.subtitle{
+  margin-top: 14px;
+  color: #8d8d8d;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.purchaseBtn{
+  margin-top: 26px;
+  padding: 14px 38px;
+  border: 1px solid #e5b8ad;
+  background: transparent;
+  color: #222;
+  letter-spacing: 2px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.purchaseBtn:hover{
+  background: #fff4f1;
+}
+
+/* decorations base */
+.d{
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* approximate positions like screenshot */
+.cloud{ top: 140px; left: 260px; width: 120px; opacity: .9; }
+
+.bird{ top: 90px; right: 260px; width: 85px; }
+.bicycle{ bottom: 70px; left: 150px; width: 220px; }
+
+.leafDark{ left: 50%; bottom: 130px; width: 42px; transform: translateX(-50%); opacity: .95; }
+
+.bigLeaf{ right: 210px; bottom: 95px; width: 130px; opacity: .95; }
+
+.leafLight{ right: 120px; bottom: 70px; width: 120px; opacity: .9; }
+
+.petal1{ left: 43%; top: 170px; width: 44px; transform: translateX(-50%); }
+.petal2{ left: 52%; top: 120px; width: 44px; transform: translateX(-50%); }
+
+.smallLeaf1{ left: 62%; bottom: 120px; width: 34px; opacity: .9; }
+.smallLeaf2{ left: 73%; bottom: 160px; width: 34px; opacity: .9; }
+
+/* dots */
+.dot{
+  position:absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #f1c7bb;
+  opacity: .7;
+  z-index: 1;
+}
+.dot1{ top: 60px; left: 50%; }
+.dot2{ top: 180px; left: 120px; }
+.dot3{ top: 150px; right: 430px; background:#cfe9dc; }
+.dot4{ bottom: 80px; left: 56%; }
+
+/* animations */
+@keyframes floatY { 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(-10px); } }
+@keyframes floatY2 { 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(-6px); } }
+@keyframes petal { 0%,100%{ transform: translate(-50%,0) rotate(0); } 50%{ transform: translate(calc(-50% + 6px),-10px) rotate(8deg); } }
+@keyframes petal2 { 0%,100%{ transform: translate(-50%,0) rotate(0); } 50%{ transform: translate(calc(-50% - 6px),-8px) rotate(-8deg); } }
+
+.floatSlow{ animation: floatY 5s ease-in-out infinite; }
+.floatSlow2{ animation: floatY2 4s ease-in-out infinite; }
+.floatBird{ animation: floatY 3.5s ease-in-out infinite; }
+.floatBike{ animation: floatY2 6s ease-in-out infinite; }
+.floatPetal{ animation: petal 5s ease-in-out infinite; }
+.floatPetal2{ animation: petal2 5.5s ease-in-out infinite; }
+
+/* responsive tweaks */
+@media (max-width: 900px){
+  .bicycle{ left: 40px; width: 190px; }
+  .bird{ right: 80px; }
+  .bigLeaf{ right: 90px; }
+  .leafLight{ right: 30px; }
+}
+@media (max-width: 600px){
+  .mareeHero{ min-height: 520px; }
+  .bicycle{ bottom: 40px; width: 170px; }
+  .cloud{ left: 40px; top: 90px; }
+  .leafLight, .bigLeaf{ display: none; } /* mobile pe clutter kam */
+}
