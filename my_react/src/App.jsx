@@ -1,15 +1,37 @@
-import Yes from "./props"
+// import Yes from "./props"
+
+// function App() {
+ 
+// const hobbies = ["reading , coding ,waticngmovies ,travelling"]
+
+//   return (
+      
+//     <>
+//     <Yes name ="tasbeeha"  age ={20} cast = "sherwani pathan" hobbies ={hobbies}/>
+
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+// import Counter from "./counter"
+// import ToggleText from "./ToggleText"
+import LikeButton from "./LikeButton"
+
+
 
 function App() {
- 
-const hobbies = ["reading , coding ,waticngmovies ,travelling"]
-
   return (
-      
-    <>
-    <Yes name ="tasbeeha"  age ={20} cast = "sherwani pathan" hobbies ={hobbies}/>
-
-    </>
+    <div>
+      {/* <Counter /> */}
+      {/* <ToggleText /> */}
+      <LikeButton />
+    </div>
   )
 }
 
